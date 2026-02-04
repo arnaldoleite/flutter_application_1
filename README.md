@@ -108,3 +108,8 @@ flutter run
 <h1>👨‍💻 Autor</h1>
 
 Arnaldo
+
+<dl>
+  <dt>📍 Portugal</dt>
+  <dt>💼 Project developed for learning and demonstrating development with Flutter + Firebase Firestore</dt>
+</dl>
