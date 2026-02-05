@@ -18,7 +18,7 @@ O app utiliza forms dinâmicos com base nas propriedades das classes Restaurant,
 
    <li>Imagem de logo e fundo</li>
 
-   <li>Mensagens de restaurante fechado</li>
+   <li>Localização no Flutter, usando geração de código ARB e mapeamento de localização em nível de interface do usuário.</li>
  </ul>
  <li>Formulário dinâmico, baseado nas propriedades da classe.</li>
  
