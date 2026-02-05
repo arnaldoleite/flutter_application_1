@@ -15,70 +15,101 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'DailyFood';
 
   @override
-  String get scRestaurantTitle => 'Restaurant';
+  String get restaurantsTitle => 'Restaurant';
 
   @override
-  String get scRestaurantName => 'Name';
+  String get restaurantCreatorId => 'Restaurant creator ID';
 
   @override
-  String get scRestaurantFullName => 'Full name';
+  String get restaurantPostedAt => 'Restaurant posted at';
 
   @override
-  String get scRestaurantAddress => 'Address';
+  String get restaurantTitle => 'Restaurant';
 
   @override
-  String get scRestaurantCellNumber => 'Cellphone number';
+  String get restaurantName => 'Name';
 
   @override
-  String get scRestaurantGpsPoint => 'GPS coordinate';
+  String get restaurantFullName => 'Full name';
 
   @override
-  String get scRestaurantBackgroundImage => 'Background image';
+  String get restaurantAddress => 'Address';
 
   @override
-  String get scRestaurantMakeReservation => 'Make reservations';
+  String get restaurantCellNumber => 'Cellphone number';
 
   @override
-  String get scRestaurantClosed => 'Closed';
+  String get restaurantGpsPoint => 'GPS coordinate';
 
   @override
-  String get scRestaurantClosedMessage => 'Closing message';
+  String get restaurantBackgroundImageURL => 'Background image URL';
 
   @override
-  String get scRestaurantDailyFood1name => 'First dish name';
+  String get restaurantLogoImageURL => 'Logo image URL';
 
   @override
-  String get scRestaurantDailyFood1image => 'First dish image';
+  String get restaurantMakeReservation => 'Make reservations';
 
   @override
-  String get scRestaurantDailyFood1price => 'First dish price';
+  String get restaurantClosed => 'Closed';
 
   @override
-  String get scRestaurantDailyFood1active => 'First dish availability';
+  String get restaurantClosedMessage => 'Closing message';
 
   @override
-  String get scRestaurantDailyFood2name => 'Name of the second dish';
+  String get restaurantDailyFood => 'Daily dish';
 
   @override
-  String get scRestaurantDailyFood2image => 'Image of the second dish';
+  String get restaurantDailyFood1name => 'First dish name';
 
   @override
-  String get scRestaurantDailyFood2price => 'Price of the second dish';
+  String get restaurantDailyFood1image => 'First dish image';
 
   @override
-  String get scRestaurantDailyFood2active => 'Availability of the second dish';
+  String get restaurantDailyFood1price => 'First dish price';
 
   @override
-  String get scRestaurantDailyFood3name => 'Name of the third dish';
+  String get restaurantDailyFood1active => 'First dish availability';
 
   @override
-  String get scRestaurantDailyFood3image => 'Image of the third dish';
+  String get restaurantDailyFood2name => 'Name of the second dish';
 
   @override
-  String get scRestaurantDailyFood3price => 'Price of the third dish';
+  String get restaurantDailyFood2image => 'Image of the second dish';
 
   @override
-  String get scRestaurantDailyFood3active => 'Availability of the third dish';
+  String get restaurantDailyFood2price => 'Price of the second dish';
+
+  @override
+  String get restaurantDailyFood2active => 'Availability of the second dish';
+
+  @override
+  String get restaurantDailyFood3name => 'Name of the third dish';
+
+  @override
+  String get restaurantDailyFood3image => 'Image of the third dish';
+
+  @override
+  String get restaurantDailyFood3price => 'Price of the third dish';
+
+  @override
+  String get restaurantDailyFood3active => 'Availability of the third dish';
+
+  @override
+  String get restaurantLoadError =>
+      'Error when loading restaurantsfinal local = AppLocalizations.of(context)!;';
+
+  @override
+  String get restaurantEmptyError => 'No restaurants found';
+
+  @override
+  String get restaurantCreateError => 'Error creating restaurant';
+
+  @override
+  String get restaurantCreateSuccess => 'Restaurant created successfully';
+
+  @override
+  String get restaurantCreateTitle => 'Create Restaurant';
 
   @override
   String get allEnterValue => 'Enter the Value';
@@ -94,4 +125,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get allSubmit => 'Submit';
+
+  @override
+  String get fieldRequired => 'Field required';
 }

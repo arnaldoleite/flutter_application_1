@@ -45,7 +45,7 @@ class _DailyFoodScreenState extends State<DailyFoodScreen> {
               keyboardType: prop.typeofInput,
               maxLength: prop.maxLength > 0 ? prop.maxLength : null,
               decoration: InputDecoration(
-                labelText: prop.nameToDisplay,
+                labelText: prop.nameToDisplayKey,
                 border: const OutlineInputBorder(),
               ),
               onChanged: (value) {

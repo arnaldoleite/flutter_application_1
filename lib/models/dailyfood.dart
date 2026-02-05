@@ -46,31 +46,31 @@ class DailyFood  {
   static  customProperty getCustomProperty(String propertyName) {
     switch (propertyName) {
       case 'dailyfood1name':
-        return customProperty(nameToDisplay: 'Dish of the day one', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood1name', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
       case 'dailyfood1image':
-        return customProperty(nameToDisplay: 'Dish of the day one Image URL', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
+        return customProperty(nameToDisplayKey: 'dailyfood1image', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
       case 'dailyfood1price':
-        return customProperty(nameToDisplay: 'Dish of the day one Price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
+        return customProperty(nameToDisplayKey: 'dailyfood1price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
       case 'dailyfood1active':
-        return customProperty(nameToDisplay: 'Dish of the day one Active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood1active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
       case 'dailyfood2name':
-        return customProperty(nameToDisplay: 'Dish of the day two', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood2name', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
       case 'dailyfood2image':
-        return customProperty(nameToDisplay: 'Dish of the day two Image URL', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
+        return customProperty(nameToDisplayKey: 'dailyfood2image', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
       case 'dailyfood2price':
-        return customProperty(nameToDisplay: 'Dish of the day two Price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
+        return customProperty(nameToDisplayKey: 'dailyfood2price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
       case 'dailyfood2active':
-        return customProperty(nameToDisplay: 'Dish of the day two Active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood2active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
       case 'dailyfood3name':
-        return customProperty(nameToDisplay: 'Dish of the day three', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood3name', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
       case 'dailyfood3image':
-        return customProperty(nameToDisplay: 'Dish of the day three Image URL', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
+        return customProperty(nameToDisplayKey: 'dailyfood3image', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.url);
       case 'dailyfood3price':
-        return customProperty(nameToDisplay: 'Dish of the day three Price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
+        return customProperty(nameToDisplayKey: 'dailyfood3price', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.number);
       case 'dailyfood3active':
-        return customProperty(nameToDisplay: 'Dish of the day three Active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'dailyfood3active', visible: true, readOnly: false, maxLength: 5, typeofInput: TextInputType.text);
       default:
-        return customProperty(nameToDisplay: '', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: '', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
     }
   } 
   

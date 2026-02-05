@@ -45,7 +45,7 @@ class _AddressScreenState extends State<AddressScreen> {
               keyboardType: prop.typeofInput,
               maxLength: prop.maxLength > 0 ? prop.maxLength : null,
               decoration: InputDecoration(
-                labelText: prop.nameToDisplay,
+                labelText: prop.nameToDisplayKey,
                 border: const OutlineInputBorder(),
               ),
               onChanged: (value) {

@@ -1,15 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/restaurant.dart';
 import 'restaurant_create_screen.dart';
+import '../l10n/app_localizations.dart';
+import '../models/locale_controller.dart';
 
 class RestaurantListScreen extends StatelessWidget {
   const RestaurantListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
-      appBar: AppBar(title: const Text('Restaurantes')),
+      appBar: AppBar(
+        title: Text(AppLocalizations.of(context)!.restaurantsTitle),
+        actions: [
+          TextButton(
+            onPressed: () {
+              context.read<LocaleController>().setLocale(const Locale('pt'));
+            },
+            child: const Text('PT'),
+          ),
+          TextButton(
+            onPressed: () {
+              context.read<LocaleController>().setLocale(const Locale('en'));
+            },
+            child: const Text('EN'),
+          ),
+        ],
+        ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
@@ -27,18 +47,19 @@ class RestaurantListScreen extends StatelessWidget {
             //.orderBy('name')
             .snapshots(),
         builder: (context, snapshot) {
+          
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           }
 
           if (snapshot.hasError) {
-            return const Center(child: Text('Erro ao carregar restaurantes'));
+            return Center(child: Text(AppLocalizations.of(context)!.restaurantLoadError));
           }
 
           final docs = snapshot.data!.docs;
 
           if (docs.isEmpty) {
-            return const Center(child: Text('Nenhum restaurante encontrado'));
+            return Center(child: Text(AppLocalizations.of(context)!.restaurantEmptyError));
           }
 
           final restaurants =

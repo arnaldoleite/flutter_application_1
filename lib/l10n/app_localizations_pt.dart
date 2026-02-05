@@ -15,72 +15,100 @@ class AppLocalizationsPt extends AppLocalizations {
   String get appTitle => 'DailyFood';
 
   @override
-  String get scRestaurantTitle => 'Restaurante';
+  String get restaurantsTitle => 'Restaurantes';
 
   @override
-  String get scRestaurantName => 'Nome';
+  String get restaurantCreatorId => 'ID do criador do restaurante';
 
   @override
-  String get scRestaurantFullName => 'Nome completo';
+  String get restaurantPostedAt => 'Data de publicação do restaurante';
 
   @override
-  String get scRestaurantAddress => 'Morada';
+  String get restaurantTitle => 'Restaurante';
 
   @override
-  String get scRestaurantCellNumber => 'Número de telemovel';
+  String get restaurantName => 'Nome';
 
   @override
-  String get scRestaurantGpsPoint => 'Coordenada GPS';
+  String get restaurantFullName => 'Nome completo';
 
   @override
-  String get scRestaurantBackgroundImage => 'Imagem de fundo';
+  String get restaurantAddress => 'Morada';
 
   @override
-  String get scRestaurantMakeReservation => 'Faz reservas';
+  String get restaurantCellNumber => 'Número de telemovel';
 
   @override
-  String get scRestaurantClosed => 'Encerrado';
+  String get restaurantGpsPoint => 'Coordenada GPS';
 
   @override
-  String get scRestaurantClosedMessage => 'Mensagem de encerramento';
+  String get restaurantBackgroundImageURL => 'Imagem de fundo';
 
   @override
-  String get scRestaurantDailyFood1name => 'Nome do primeiro prato';
+  String get restaurantLogoImageURL => 'URL da imagem do logo';
 
   @override
-  String get scRestaurantDailyFood1image => 'Imagem do primeiro prato';
+  String get restaurantMakeReservation => 'Faz reservas';
 
   @override
-  String get scRestaurantDailyFood1price => 'Preço do primeiro prato';
+  String get restaurantClosed => 'Encerrado';
 
   @override
-  String get scRestaurantDailyFood1active =>
-      'Disponibilidade do primeiro prato';
+  String get restaurantClosedMessage => 'Mensagem de encerramento';
 
   @override
-  String get scRestaurantDailyFood2name => 'Nome do segundo prato';
+  String get restaurantDailyFood => 'Prato do dia';
 
   @override
-  String get scRestaurantDailyFood2image => 'Imagem do segundo prato';
+  String get restaurantDailyFood1name => 'Nome do primeiro prato';
 
   @override
-  String get scRestaurantDailyFood2price => 'Preço do segundo prato';
+  String get restaurantDailyFood1image => 'Imagem do primeiro prato';
 
   @override
-  String get scRestaurantDailyFood2active => 'Disponibilidade do segundo prato';
+  String get restaurantDailyFood1price => 'Preço do primeiro prato';
 
   @override
-  String get scRestaurantDailyFood3name => 'Nome do terceiro prato';
+  String get restaurantDailyFood1active => 'Disponibilidade do primeiro prato';
 
   @override
-  String get scRestaurantDailyFood3image => 'Imagem do terceiro prato';
+  String get restaurantDailyFood2name => 'Nome do segundo prato';
 
   @override
-  String get scRestaurantDailyFood3price => 'Preço do terceiro prato';
+  String get restaurantDailyFood2image => 'Imagem do segundo prato';
 
   @override
-  String get scRestaurantDailyFood3active =>
-      'Disponibilidade do terceiro prato';
+  String get restaurantDailyFood2price => 'Preço do segundo prato';
+
+  @override
+  String get restaurantDailyFood2active => 'Disponibilidade do segundo prato';
+
+  @override
+  String get restaurantDailyFood3name => 'Nome do terceiro prato';
+
+  @override
+  String get restaurantDailyFood3image => 'Imagem do terceiro prato';
+
+  @override
+  String get restaurantDailyFood3price => 'Preço do terceiro prato';
+
+  @override
+  String get restaurantDailyFood3active => 'Disponibilidade do terceiro prato';
+
+  @override
+  String get restaurantLoadError => 'Erro ao carregar restaurantes';
+
+  @override
+  String get restaurantEmptyError => 'Nenhum restaurante encontrado';
+
+  @override
+  String get restaurantCreateError => 'Erro ao criar restaurante';
+
+  @override
+  String get restaurantCreateSuccess => 'Restaurante criado com sucesso';
+
+  @override
+  String get restaurantCreateTitle => 'Criar restaurante';
 
   @override
   String get allEnterValue => 'Introduza o valor';
@@ -96,4 +124,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get allSubmit => 'Aceitar';
+
+  @override
+  String get fieldRequired => 'Campo obrigatório';
 }

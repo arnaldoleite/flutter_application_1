@@ -38,37 +38,37 @@ class Restaurant {
     static customProperty getCustomProperty(String propertyName) {
     switch (propertyName) {
       case 'creatorId':
-        return customProperty(nameToDisplay: 'Creator Identification', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantCreatorId', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
       case 'postedAt':
-        return customProperty(nameToDisplay: 'Posted At', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.datetime);
+        return customProperty(nameToDisplayKey: 'restaurantPostedAt', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.datetime);
       case 'name':
-        return customProperty(nameToDisplay: 'Name', visible: true, readOnly: false, maxLength: 20, typeofInput: TextInputType.name);
+        return customProperty(nameToDisplayKey: 'restaurantName', visible: true, readOnly: false, maxLength: 20, typeofInput: TextInputType.name);
       case 'fullname':
-        return customProperty(nameToDisplay: 'Full Name', visible: true, readOnly: false, maxLength: 40, typeofInput: TextInputType.name);
+        return customProperty(nameToDisplayKey: 'restaurantFullName', visible: true, readOnly: false, maxLength: 40, typeofInput: TextInputType.name);
       case 'cellnumber':
-        return customProperty(nameToDisplay: 'Cell Number', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.phone);
+        return customProperty(nameToDisplayKey: 'restaurantCellNumber', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.phone);
       case 'logoimageurl':
-        return customProperty(nameToDisplay: 'Logo Image URL', visible: true, readOnly: false, maxLength: 999, typeofInput: TextInputType.url);
+        return customProperty(nameToDisplayKey: 'restaurantLogoImageURL', visible: true, readOnly: false, maxLength: 999, typeofInput: TextInputType.url);
       case 'backgroundimageurl':
-        return customProperty(nameToDisplay: 'Background Image URL', visible: true, readOnly: false, maxLength: 99, typeofInput: TextInputType.url);
+        return customProperty(nameToDisplayKey: 'restaurantBackgroundImageURL', visible: true, readOnly: false, maxLength: 99, typeofInput: TextInputType.url);
       case 'makereservation':
-        return customProperty(nameToDisplay: 'Make Reservation', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantMakeReservation', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.text);
       case 'closed':
-        return customProperty(nameToDisplay: 'Closed', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantClosed', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.text);
       case 'closedmessage':
-        return customProperty(nameToDisplay: 'Closed Message', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
+        return customProperty(nameToDisplayKey: 'restaurantClosedMessage', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
       case 'address':
-        return customProperty(nameToDisplay: 'Address', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
+        return customProperty(nameToDisplayKey: 'restaurantAddress', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
       case 'dailyfood':
-        return customProperty(nameToDisplay: 'Daily Food', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
+        return customProperty(nameToDisplayKey: 'restaurantDailyFood', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
       default:
         customProperty customPrty = DailyFood.getCustomProperty(propertyName);
-        if (customPrty.nameToDisplay == '') {
+        if (customPrty.nameToDisplayKey == '') {
           customPrty = Address.getCustomProperty(propertyName);
         }
-        if (customPrty.nameToDisplay == '') {
+        if (customPrty.nameToDisplayKey == '') {
           
-          return customProperty(nameToDisplay: 'Invalid property name: $propertyName', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
+          return customProperty(nameToDisplayKey: 'Invalid property name: $propertyName', visible: true, readOnly: false, maxLength: 200, typeofInput: TextInputType.multiline);
      
         } else {
           return customPrty;

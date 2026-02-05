@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 class customProperty {
-  final String nameToDisplay;
+  final String nameToDisplayKey;
   final bool visible;
   final bool readOnly;
   final int maxLength;
   TextInputType? typeofInput;
+  
 
-  customProperty({ required  this.nameToDisplay, required this.visible, required this.readOnly, required this.maxLength, required this.typeofInput});
+  customProperty({required  this.nameToDisplayKey, required this.visible, required this.readOnly, required this.maxLength, required this.typeofInput});
 
   Map<String, dynamic> toMap() {
     return {
-      'name': nameToDisplay,
+      'nameToDisplayKey': nameToDisplayKey,
       'visible': visible,
       'readOnly': readOnly,
       'maxLength': maxLength, 
@@ -19,7 +20,7 @@ class customProperty {
   }
 
   customProperty.fromMap(Map<String, dynamic> customPropertyMap)
-      : nameToDisplay = customPropertyMap["name"],
+      : nameToDisplayKey = customPropertyMap["nameToDisplayKey"],
         visible = customPropertyMap["visible"],
         readOnly = customPropertyMap["readOnly"],
         maxLength = customPropertyMap["maxLength"],
@@ -53,17 +54,17 @@ class Address {
   static  customProperty getCustomProperty(String propertyName) {
     switch (propertyName) {
       case 'streetName':
-        return customProperty(nameToDisplay: 'Street Name', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantAddress', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
       case 'zipcode':
-        return customProperty(nameToDisplay: 'Zip Code', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantZipCode', visible: true, readOnly: false, maxLength: 10, typeofInput: TextInputType.text);
       case 'cityName':
-        return customProperty(nameToDisplay: 'City Name', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: 'restaurantCityName', visible: true, readOnly: false, maxLength: 50, typeofInput: TextInputType.text);
       case 'gpspointlatitude':
-        return customProperty(nameToDisplay: 'GPS Point Latitude', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.number);
+        return customProperty(nameToDisplayKey: 'restaurantGpsPointLatitude', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.number);
       case 'gpspointlongitude':
-        return customProperty(nameToDisplay: 'GPS Point Longitude', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.number);
+        return customProperty(nameToDisplayKey: 'restaurantGpsPointLongitude', visible: true, readOnly: false, maxLength: 0, typeofInput: TextInputType.number);
       default:
-        return customProperty(nameToDisplay: '', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
+        return customProperty(nameToDisplayKey: '', visible: false, readOnly: true, maxLength: 0, typeofInput: TextInputType.text);
    }
   }
   Map<String, dynamic> toMap() {

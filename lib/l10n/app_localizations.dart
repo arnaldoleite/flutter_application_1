@@ -110,137 +110,197 @@ abstract class AppLocalizations {
   /// **'DailyFood'**
   String get appTitle;
 
-  /// No description provided for @scRestaurantTitle.
+  /// No description provided for @restaurantsTitle.
   ///
   /// In en, this message translates to:
   /// **'Restaurant'**
-  String get scRestaurantTitle;
+  String get restaurantsTitle;
 
-  /// No description provided for @scRestaurantName.
+  /// No description provided for @restaurantCreatorId.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant creator ID'**
+  String get restaurantCreatorId;
+
+  /// No description provided for @restaurantPostedAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant posted at'**
+  String get restaurantPostedAt;
+
+  /// No description provided for @restaurantTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant'**
+  String get restaurantTitle;
+
+  /// No description provided for @restaurantName.
   ///
   /// In en, this message translates to:
   /// **'Name'**
-  String get scRestaurantName;
+  String get restaurantName;
 
-  /// No description provided for @scRestaurantFullName.
+  /// No description provided for @restaurantFullName.
   ///
   /// In en, this message translates to:
   /// **'Full name'**
-  String get scRestaurantFullName;
+  String get restaurantFullName;
 
-  /// No description provided for @scRestaurantAddress.
+  /// No description provided for @restaurantAddress.
   ///
   /// In en, this message translates to:
   /// **'Address'**
-  String get scRestaurantAddress;
+  String get restaurantAddress;
 
-  /// No description provided for @scRestaurantCellNumber.
+  /// No description provided for @restaurantCellNumber.
   ///
   /// In en, this message translates to:
   /// **'Cellphone number'**
-  String get scRestaurantCellNumber;
+  String get restaurantCellNumber;
 
-  /// No description provided for @scRestaurantGpsPoint.
+  /// No description provided for @restaurantGpsPoint.
   ///
   /// In en, this message translates to:
   /// **'GPS coordinate'**
-  String get scRestaurantGpsPoint;
+  String get restaurantGpsPoint;
 
-  /// No description provided for @scRestaurantBackgroundImage.
+  /// No description provided for @restaurantBackgroundImageURL.
   ///
   /// In en, this message translates to:
-  /// **'Background image'**
-  String get scRestaurantBackgroundImage;
+  /// **'Background image URL'**
+  String get restaurantBackgroundImageURL;
 
-  /// No description provided for @scRestaurantMakeReservation.
+  /// No description provided for @restaurantLogoImageURL.
+  ///
+  /// In en, this message translates to:
+  /// **'Logo image URL'**
+  String get restaurantLogoImageURL;
+
+  /// No description provided for @restaurantMakeReservation.
   ///
   /// In en, this message translates to:
   /// **'Make reservations'**
-  String get scRestaurantMakeReservation;
+  String get restaurantMakeReservation;
 
-  /// No description provided for @scRestaurantClosed.
+  /// No description provided for @restaurantClosed.
   ///
   /// In en, this message translates to:
   /// **'Closed'**
-  String get scRestaurantClosed;
+  String get restaurantClosed;
 
-  /// No description provided for @scRestaurantClosedMessage.
+  /// No description provided for @restaurantClosedMessage.
   ///
   /// In en, this message translates to:
   /// **'Closing message'**
-  String get scRestaurantClosedMessage;
+  String get restaurantClosedMessage;
 
-  /// No description provided for @scRestaurantDailyFood1name.
+  /// No description provided for @restaurantDailyFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily dish'**
+  String get restaurantDailyFood;
+
+  /// No description provided for @restaurantDailyFood1name.
   ///
   /// In en, this message translates to:
   /// **'First dish name'**
-  String get scRestaurantDailyFood1name;
+  String get restaurantDailyFood1name;
 
-  /// No description provided for @scRestaurantDailyFood1image.
+  /// No description provided for @restaurantDailyFood1image.
   ///
   /// In en, this message translates to:
   /// **'First dish image'**
-  String get scRestaurantDailyFood1image;
+  String get restaurantDailyFood1image;
 
-  /// No description provided for @scRestaurantDailyFood1price.
+  /// No description provided for @restaurantDailyFood1price.
   ///
   /// In en, this message translates to:
   /// **'First dish price'**
-  String get scRestaurantDailyFood1price;
+  String get restaurantDailyFood1price;
 
-  /// No description provided for @scRestaurantDailyFood1active.
+  /// No description provided for @restaurantDailyFood1active.
   ///
   /// In en, this message translates to:
   /// **'First dish availability'**
-  String get scRestaurantDailyFood1active;
+  String get restaurantDailyFood1active;
 
-  /// No description provided for @scRestaurantDailyFood2name.
+  /// No description provided for @restaurantDailyFood2name.
   ///
   /// In en, this message translates to:
   /// **'Name of the second dish'**
-  String get scRestaurantDailyFood2name;
+  String get restaurantDailyFood2name;
 
-  /// No description provided for @scRestaurantDailyFood2image.
+  /// No description provided for @restaurantDailyFood2image.
   ///
   /// In en, this message translates to:
   /// **'Image of the second dish'**
-  String get scRestaurantDailyFood2image;
+  String get restaurantDailyFood2image;
 
-  /// No description provided for @scRestaurantDailyFood2price.
+  /// No description provided for @restaurantDailyFood2price.
   ///
   /// In en, this message translates to:
   /// **'Price of the second dish'**
-  String get scRestaurantDailyFood2price;
+  String get restaurantDailyFood2price;
 
-  /// No description provided for @scRestaurantDailyFood2active.
+  /// No description provided for @restaurantDailyFood2active.
   ///
   /// In en, this message translates to:
   /// **'Availability of the second dish'**
-  String get scRestaurantDailyFood2active;
+  String get restaurantDailyFood2active;
 
-  /// No description provided for @scRestaurantDailyFood3name.
+  /// No description provided for @restaurantDailyFood3name.
   ///
   /// In en, this message translates to:
   /// **'Name of the third dish'**
-  String get scRestaurantDailyFood3name;
+  String get restaurantDailyFood3name;
 
-  /// No description provided for @scRestaurantDailyFood3image.
+  /// No description provided for @restaurantDailyFood3image.
   ///
   /// In en, this message translates to:
   /// **'Image of the third dish'**
-  String get scRestaurantDailyFood3image;
+  String get restaurantDailyFood3image;
 
-  /// No description provided for @scRestaurantDailyFood3price.
+  /// No description provided for @restaurantDailyFood3price.
   ///
   /// In en, this message translates to:
   /// **'Price of the third dish'**
-  String get scRestaurantDailyFood3price;
+  String get restaurantDailyFood3price;
 
-  /// No description provided for @scRestaurantDailyFood3active.
+  /// No description provided for @restaurantDailyFood3active.
   ///
   /// In en, this message translates to:
   /// **'Availability of the third dish'**
-  String get scRestaurantDailyFood3active;
+  String get restaurantDailyFood3active;
+
+  /// No description provided for @restaurantLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error when loading restaurantsfinal local = AppLocalizations.of(context)!;'**
+  String get restaurantLoadError;
+
+  /// No description provided for @restaurantEmptyError.
+  ///
+  /// In en, this message translates to:
+  /// **'No restaurants found'**
+  String get restaurantEmptyError;
+
+  /// No description provided for @restaurantCreateError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error creating restaurant'**
+  String get restaurantCreateError;
+
+  /// No description provided for @restaurantCreateSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant created successfully'**
+  String get restaurantCreateSuccess;
+
+  /// No description provided for @restaurantCreateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Restaurant'**
+  String get restaurantCreateTitle;
 
   /// No description provided for @allEnterValue.
   ///
@@ -271,6 +331,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Submit'**
   String get allSubmit;
+
+  /// No description provided for @fieldRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Field required'**
+  String get fieldRequired;
 }
 
 class _AppLocalizationsDelegate

@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/restaurant.dart';
 import '../models/dailyfood.dart';
 import '../models/base.dart';
+import '../l10n/app_localizations.dart';
 
 class RestaurantCreateScreen extends StatefulWidget {
   const RestaurantCreateScreen({super.key});
@@ -54,12 +55,12 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
         keyboardType: meta.typeofInput,
         maxLength: meta.maxLength > 0 ? meta.maxLength : null,
         decoration: InputDecoration(
-          labelText: meta.nameToDisplay,
+          labelText: localizeProperty(context, meta.nameToDisplayKey) ,
           border: const OutlineInputBorder(),
         ),
         validator: (value) {
           if (!meta.readOnly && (value == null || value.isEmpty)) {
-            return 'Campo obrigatório';
+            return AppLocalizations.of(context)!.fieldRequired;
           }
           return null;
         },
@@ -94,8 +95,8 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
     if (!mounted) return;
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('✅ Restaurante criado com sucesso'),
+      SnackBar(
+        content: Text('✅ ${AppLocalizations.of(context)!.restaurantCreateSuccess}'),
         backgroundColor: Colors.green,
       ),
     );
@@ -108,7 +109,7 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('❌ Erro ao gravar restaurante: $e'),
+        content: Text('❌ ${AppLocalizations.of(context)!.restaurantCreateError}: $e'),
         backgroundColor: Colors.red,
       ),
     );
@@ -123,7 +124,7 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('➕ Criar Restaurante')),
+      appBar: AppBar(title:  Text('➕ ${AppLocalizations.of(context)!.restaurantCreateTitle}')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Form(
@@ -136,7 +137,7 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
                   ? const Center(child: CircularProgressIndicator())
                   : ElevatedButton.icon(
                       icon: const Icon(Icons.save),
-                      label: const Text('Guardar no Firebase'),
+                      label: Text(AppLocalizations.of(context)!.restaurantCreateTitle),
                       onPressed: _saveRestaurant,
                     ),
             ],
@@ -146,3 +147,40 @@ class _RestaurantCreateScreenState extends State<RestaurantCreateScreen> {
     );
   }
 }
+String localizeProperty(
+  BuildContext context,
+  String key,
+) {
+  final l10n = AppLocalizations.of(context)!;
+
+  switch (key) {
+    case 'restaurantCreatorId':
+      return l10n.restaurantCreatorId;
+    case 'restaurantPostedAt':
+      return l10n.restaurantPostedAt;
+    case 'restaurantName':
+      return l10n.restaurantName;
+    case 'restaurantFullName':
+      return l10n.restaurantFullName;
+    case 'restaurantCellNumber':
+      return l10n.restaurantCellNumber;
+    case 'restaurantLogoImageURL':
+      return l10n.restaurantLogoImageURL;
+    case 'restaurantBackgroundImageURL':
+      return l10n.restaurantBackgroundImageURL;
+    case 'restaurantMakeReservation':
+      return l10n.restaurantMakeReservation;
+    case 'restaurantClosed':
+      return l10n.restaurantClosed;
+    case 'restaurantClosedMessage':
+      return l10n.restaurantClosedMessage;
+    case 'restaurantAddress':
+      return l10n.restaurantAddress;
+    case 'restaurantDailyFood':
+      return l10n.restaurantDailyFood;
+
+    default:
+      return key;
+  }
+}
+
