@@ -1,32 +1,34 @@
 <h1>🏨 Flutter Restaurant App</h1>
 <h1> Ongoing project !</h1>
-Um aplicativo Flutter para gerenciar restaurantes, com integração em Firebase Firestore. Permite listar, criar e visualizar restaurantes, incluindo seus endereços e pratos do dia (DailyFood).
+A Flutter app for managing restaurants, with Firebase Firestore integration. It allows you to list, create, and view restaurants, including their addresses and daily specials (DailyFood).
 
-O app utiliza forms dinâmicos com base nas propriedades das classes Restaurant, Address e DailyFood.
+The app uses dynamic forms based on the properties of the Restaurant, Address, and DailyFood classes.
 
 <h1>📌 Funcionalidades</h1>
+<h1>📌 Features</h1>
 <ul>
- <li>Listar restaurantes em tempo real do Firestore.</li>
-
- <li>Criar um novo restaurante com:</li>
-  <ul>
-   <li>Nome, Nome completo, Número de contacto</li>
-
-   <li>Endereço (Address) e GPS</li>
-
-   <li>DailyFood (até 3 pratos)</li>
-
-   <li>Imagem de logo e fundo</li>
-
-   <li>Localização no Flutter, usando geração de código ARB e mapeamento de localização em nível de interface do usuário.</li>
- </ul>
- <li>Formulário dinâmico, baseado nas propriedades da classe.</li>
+ <li>List restaurants in real time from Firestore.</li>
  
- <li>Feedback visual com SnackBar em sucesso/erro ao gravar.</li>
+ <li>Create a new restaurant with:</li>
  
- <li>Estrutura preparada para edição futura de restaurantes, endereço e pratos.</li>
+ <li>Name, Full Name, Contact Number</li>
+ 
+ <li>Address and GPS</li>
+ 
+ <li>Daily Food (up to 3 dishes)</li>
+ 
+ <li>Logo and background image</li>
+ 
+ <li>Location in Flutter, using ARB code generation and UI-level location mapping.</li>
+
+ <li>Dynamic form, based on class properties.</li>
+ 
+ <li>Visual feedback with SnackBar on success/error when saving.</li>
+ 
+ <li>Structure prepared for future editing of restaurants, addresses, and dishes.</li>
 </ul>
-<h1>🏗 Estrutura do Projeto</h1>
+
+<h1>🏗 Project Structure</h1>
 <ul>
 lib/
  ├── main.dart
@@ -49,37 +51,37 @@ lib/
  │   └── base.dart
 
 
- <li>screens/ → contém todos os ecrãs da aplicação.</il>
-
- <li>models/ → contém as classes Restaurant, Address, DailyFood e customProperty.</il>
+ 
+ <li>screens/ → contains all the application screens.</il>
+ 
+ <li>models/ → contains the classes Restaurant, Address, DailyFood, and customProperty.</il>
 </ul>
-<h1>⚡ Tecnologias Utilizadas</h1>
+<h1>⚡ Technologies Used</h1>
 <ul>
  <li>Flutter 3.x / Dart</il>
-
- <li>Firebase Firestore para persistência de dados</il>
-
- <li>Formulários dinâmicos baseados em metadata das classes</il>
+ 
+ <li>Firebase Firestore for data persistence</il>
+ 
+ <li>Dynamic forms based on class metadata</il>
 </ul>
-<h1>🔧 Como Executar</h1>
+<h1>🔧 How to Run</h1>
 <ol>
- <li>clone este repositório:</il>
-
+ <li>Clone this repository:</il>
 git clone https://github.com/seu-usuario/flutter-restaurant-app.git
 cd flutter-restaurant-app
 
 
- <li>Instale as dependências:</il>
+ <li>Install dependencies:</il>
 
 flutter pub get
 
 
- <li>Configure o Firebase:</il>
+ <li>Configure Firebase:</il>
    <ul>
-     <li>Android → coloque google-services.json em android//app//</il>
-     <li>iOS → coloque GoogleService-Info.plist em ios//Runner//</il>
+     <li>Android → put google-services.json in android//app//</il>
+     <li>iOS → put GoogleService-Info.plist in ios//Runner//</il>
    </ul>
- <li>Inicialize o Firebase em main.dart:</il>
+ <li>Start Firebase in main.dart:</il>
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -88,24 +90,24 @@ void main() async {
 }
 
 
-<li>Execute o app:</il>
+<li>Run the app:</il>
 
 flutter run
 </ol>
-<h1>💡 Boas Práticas Implementadas</h1>
+<h1>💡 Implemented Best Practices</h1>
 <ul>
- <li>Formulários dinâmicos com getCustomProperty()</il>
+<li>Dynamic forms with getCustomProperty()</il>
 
- <li>Criação de objetos com valores default (Address.empty(), DailyFood.empty())</il>
+<li>Creating objects with default values ​​(Address.empty(), DailyFood.empty())</il>
 
- <li>Leitura e gravação defensiva de dados do Firestore</il>
+<li>Defensive reading and writing of Firestore data</il>
 
- <li>Feedback visual para sucesso ou erro na gravação</il>
+<li>Visual feedback for success or error in writing</il>
 
- <li>StreamBuilder para sincronização em tempo real com Firestore</il>
+<li>StreamBuilder for real-time synchronization with Firestore</il>
 </ul>
 
-<h1>👨‍💻 Autor</h1>
+<h1>👨‍💻 Author</h1>
 
 Arnaldo
 
