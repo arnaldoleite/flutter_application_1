@@ -115,3 +115,15 @@ Arnaldo
   <dt>📍 Portugal</dt>
   <dt>💼 Project developed for learning and demonstrating development with Flutter + Firebase Firestore</dt>
 </dl>
+
+<h1>✨ Example images</h1>
+
+<img width="1878" height="1017" alt="vscode_ex1" src="https://github.com/user-attachments/assets/0650fd65-de66-40cf-b5b7-7325a1808039" />
+
+<img width="1912" height="1022" alt="vscode_ex2" src="https://github.com/user-attachments/assets/1717c10d-7666-4671-b73f-e7810a8528ce" />
+
+<img width="1912" height="1016" alt="vscode_ex3" src="https://github.com/user-attachments/assets/4946e08d-0c83-4d70-b606-85962e140cfe" />
+
+<img width="1826" height="836" alt="FireBase_ex1" src="https://github.com/user-attachments/assets/44caa850-87ba-4648-a6d4-f0db53b9a28d" />
+
+
